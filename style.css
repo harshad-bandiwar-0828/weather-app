@@ -1,0 +1,171 @@
+
+body {
+  /* height: 100vh; */
+  margin-top: 30px;
+  background: linear-gradient(
+    270deg,
+    #89f7fe,
+    #d89414,
+    #74ebd5,
+    #a5960f
+  );
+  background-size: 800% 800%;
+  animation: gradientMove 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 , .fa-solid fa-cloud-sun{
+    color:#E2E8F0 ;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.btn-warning{
+    margin-left: 124px;
+}
+
+.form-control
+    {
+        width: 300px;
+        padding-left: 25px;
+        margin-left: 35px;
+    }
+
+.btn-warning:hover{
+   background-color: #e76b0c;
+} 
+
+.container{
+    height: 35vh;
+    background: rgba(0, 0, 0, 0.45);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.15);   
+    border-radius: 25px;
+    padding: 30px;
+    padding-left: 105px;
+    width: 600px;
+}
+
+.weather-results {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  width: 80%;
+  max-width: 900px;
+}
+
+.result-card {
+  /* background: rgba(0, 0, 255, 0.45); */
+  background: #4f5d95;
+  /* backdrop-filter: blur(12px); */
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.2);
+}
+
+.result-card h3 {
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.result-card p {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#date{
+  font-size: 16px;
+  /* font-weight: bold; */
+  margin-top: 10px;
+}
+
+/* ===== AQI CARD DESIGN ===== */
+
+.aqi-card {
+  /* background: #4f5d95; */
+  background: linear-gradient(135deg, #4f5d95, #3c467a);
+  color: white;
+}
+
+.aqi-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.aqi-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f1c40f;
+}
+
+.aqi-value {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.aqi-text {
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+.aqi-status {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
+.aqi-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.aqi-fill {
+  height: 100%;
+  width: 0%;
+  background: #f1c40f;
+  transition: width 0.4s ease;
+}
+
+.aqi-line {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.loader {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0;
+}
