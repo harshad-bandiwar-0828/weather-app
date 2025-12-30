@@ -1,4 +1,4 @@
-const apiKey = "6d3e6e775ccf0d73a46b2d766db03a2f"; 
+const apiKey = ""; 
 
 const cityInput = document.getElementById("cityInput");
 const weatherResults = document.getElementById("weatherResults");
@@ -178,4 +178,5 @@ function showGlobalDateTime(timezoneOffset) {
 
 cityInput.addEventListener("keypress", e => {
   if (e.key === "Enter") getWeather();
+
 });
