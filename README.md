@@ -9,7 +9,7 @@ This project demonstrates frontend development skills, API integration, and clea
 
 ## 🚀 Live Demo
 🔗 GitHub Pages:  
-https://yourusername.github.io/weather-app/
+ https://harshad-bandiwar-0828.github.io/weather-app/
 
 > ⚠️ Note: Live weather data requires an API key.  
 > For security reasons, the API key is not included in the repository.
@@ -19,7 +19,7 @@ https://yourusername.github.io/weather-app/
 ## 🎥 Project Demo
 📽️ A complete working demo of the application is available below:  
 
-- Demo Video: `assets/demo.mp4`  
+- Demo Video: `assets/weather_app_demo.mp4`  
 - Screenshots: `assets/screenshots/`
 
 (The demo video shows the application working with live weather data.)
@@ -41,6 +41,9 @@ https://yourusername.github.io/weather-app/
   - Weather condition
   - Humidity
   - Wind speed
+  - Sunrise & Sunset
+  - AQI(Air Quality Index)
+  - Local Date & Time
 - Error handling for invalid city names  
 - Clean and responsive UI  
 - User-friendly design  
@@ -85,7 +88,6 @@ API security limitations in frontend-only projects
 
 
  ---
-
 
 🔮 Future Improvements
 
