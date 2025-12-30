@@ -30,7 +30,8 @@ This project demonstrates frontend development skills, API integration, and clea
 - **HTML5** – Structure  
 - **CSS3** – Styling & responsiveness  
 - **JavaScript (ES6)** – Logic & API handling  
-- **OpenWeather API** – Weather data  
+- **OpenWeather API** – Weather data
+- **Bootstrap** 
 
 ---
 
