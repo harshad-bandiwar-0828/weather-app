@@ -4,7 +4,7 @@ const cityInput = document.getElementById("cityInput");
 const weatherResults = document.getElementById("weatherResults");
 const loader = document.getElementById("loader");
 
-// ✅ Hide cards initially
+// Hide cards initially
 weatherResults.style.display = "none";
 
   //  MAIN WEATHER FUNCTION
@@ -20,7 +20,7 @@ function getWeather() {
   const weatherUrl =
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
-  // 👉 Show loader, hide cards
+  //  Show loader, hide cards
   loader.style.display = "block";
   weatherResults.style.display = "none";
 
@@ -33,11 +33,11 @@ function getWeather() {
         return;
       }
 
-      // 🌡 Temperature
+      //  Temperature
       document.getElementById("temp").textContent =
         Math.round(data.main.temp) + " °C";
 
-      // 🌥 Condition
+      //  Condition
       const condition = data.weather[0].description;
       document.getElementById("condition").textContent =
         condition.charAt(0).toUpperCase() + condition.slice(1);
@@ -46,22 +46,22 @@ function getWeather() {
       document.getElementById("humidity").textContent =
         data.main.humidity + " %";
 
-      // 🌬 Wind
+      //  Wind
       document.getElementById("wind").textContent =
         (data.wind.speed * 3.6).toFixed(1) + " km/h";
 
-      // 🌅 Sunrise & 🌇 Sunset
+      // Sunrise &  Sunset
       document.getElementById("sunrise").textContent =
         formatTime(data.sys.sunrise);
 
       document.getElementById("sunset").textContent =
         formatTime(data.sys.sunset);
 
-      // 🌫 AQI + ⏰ Time
+      //  AQI +  Time
       getAQI(data.coord.lat, data.coord.lon);
       showGlobalDateTime(Number(data.timezone || 0));
 
-      // 👉 Hide loader, show cards
+      //  Hide loader, show cards
       loader.style.display = "none";
       weatherResults.style.display = "grid";
     })
@@ -180,3 +180,4 @@ cityInput.addEventListener("keypress", e => {
   if (e.key === "Enter") getWeather();
 
 });
+
